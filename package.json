@@ -1,0 +1,23 @@
+{
+  "name": "react_tutorials",
+  "version": "1.0.0",
+  "description": "React is a UI used to facilitate the creation of interactive, stateful &reusable UI components.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitonga123/react_js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitonga123/react_js/issues"
+  },
+  "homepage": "https://github.com/gitonga123/react_js#readme",
+  "dependencies": {
+    "webpack": "^4.2.0"
+  }
+}
