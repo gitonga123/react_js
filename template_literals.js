@@ -41,3 +41,10 @@ const markup = `
 
 
 document.writeln(markup);
+
+//Tagged Template performs a transformation
+///on the template literal and returns the final string
+//value.
+//Tag is a function that is called when the processed
+//template literal data
+let message = tag`Hello World`;
