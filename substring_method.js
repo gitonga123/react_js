@@ -21,3 +21,22 @@ console.log(msg.includes("o",8));//false
 
 console.log(msg.length);
 console.log(msg.charAt(8));
+console.log(msg.indexOf("l"));
+console.log(msg.lastIndexOf("l"));
+
+//In contrast, indexOf() and
+//lastIndexOf() convert a regular expression argument into a string and then
+//search for that string
+
+console.log("x".repeat(3));
+console.log(msg.repeat(2));
+
+//The repeat() Method
+//indent using a specific number of spaces
+
+let indent = " " .repeat(4),
+    indentLevel = 0;
+
+let newIndet = indent.repeat(++indentLevel);
+
+console.log(newIndet);
