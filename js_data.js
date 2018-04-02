@@ -23,9 +23,11 @@ let d3 = new Date(99,4,24);
 //Short Date "03/25/2015"
 //Long Date Mar 25 2016 or 25 Mar 2015
 //Full Date Wednesday March 25 2015
-
+let date = new Date();
 let df = new Date("2015-03-25"); //
 let dfiso = new Date("2015-03-25T12:00:00Z"); //UTC time is defined with a capital let Z
-let dfshort = new Date("2015/03/25");
+let dfshort = new Date("2015/03/27");
+let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
-document.getElementById("demo").innerHTML = dfshort.toDateString();
+console.log(dfshort);
+document.getElementById("demo").innerHTML = new Date(m).toDateString();
