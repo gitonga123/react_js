@@ -16,4 +16,16 @@ let d3 = new Date(99,4,24);
 
 //the seven arguments are 
 //year, month,date,hour,minute,second, millisecond
-document.getElementById('demo').innerHTML = d2.toDateString();
+//document.getElementById('demo').innerHTML = d2.toDateString();
+
+//Date Formats
+//ISO : 2015-03-25
+//Short Date "03/25/2015"
+//Long Date Mar 25 2016 or 25 Mar 2015
+//Full Date Wednesday March 25 2015
+
+let df = new Date("2015-03-25"); //
+let dfiso = new Date("2015-03-25T12:00:00Z"); //UTC time is defined with a capital let Z
+let dfshort = new Date("2015/03/25");
+
+document.getElementById("demo").innerHTML = dfshort.toDateString();
