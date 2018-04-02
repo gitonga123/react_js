@@ -16,7 +16,7 @@ console.log(y);
 
 cars.push("Toyota");
 cars[cars.length] = "Mazda";
-document.getElementById('demo').innerHTML = cars;
+//document.getElementById('demo').innerHTML = cars;
 
 //associative arrays
 //This are arrays with named indexes;
@@ -41,3 +41,5 @@ function isArray(x){
 console.log(isArray(cars));
 console.log(cars instanceof Array);
 
+//Javascript Array Methods
+document.getElementById('demo').innerHTML = cars.toString();
