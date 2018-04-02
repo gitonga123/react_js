@@ -163,3 +163,11 @@ function myArrayMax(arr){
 	return Math.max.apply(null,arr);
 }
 console.log(myArrayMax(numbers));
+
+//Conditional (Ternary) Operator
+
+let age = 10;
+
+let agevariable = (age < 18) ? "Too young" : "Old Enough";
+
+console.log(agevariable);
