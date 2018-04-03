@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/gitonga123/react_js#readme",
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.5",
+    "@fortawesome/react-fontawesome": "0.0.18",
     "webpack": "^4.2.0"
   }
 }
