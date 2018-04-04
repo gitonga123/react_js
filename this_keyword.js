@@ -38,3 +38,4 @@ const person_people = {
 
 console.log(person_people.sayName());
 
+
