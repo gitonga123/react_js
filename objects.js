@@ -39,3 +39,15 @@ console.log(persons);
 //JS Variables are not mutable. Only JavaScript objects are
 
 console.log(x);
+
+//Objects in for loop
+
+for(k in persons){
+    console.log(persons[k]);
+}
+
+
+//deleting properties
+delete persons.age;
+
+console.log(persons);
