@@ -51,3 +51,21 @@ for(k in persons){
 delete persons.age;
 
 console.log(persons);
+
+//The this keyword
+//The object that owns the javascript code.
+//the value of this, when used in a function, is the object that owns the functions
+
+let personss = {
+    firstName: "John", 
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue",
+    fullname: function(){
+        return this.firstName + " " + this.lastName;
+    } 
+}
+
+console.log(personss.fullname);
+console.log(personss.fullname());
+
