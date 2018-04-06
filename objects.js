@@ -109,3 +109,27 @@ hFeatures.changeName("Wisdom");
 console.log(fFeatures.name());
 console.log(hFeatures.name());
 console.log(hFeatures.fullname());
+
+//The Math() object is a global object.
+//The new keyword cannot be used on math
+
+///Prototype Inheritance
+//All Js objects inherit properies and methods from a prototype
+//Date object inherit from Data.proptotype
+//Array from Array.prototype
+//Persons from Person.prototype
+
+//Adding Properties and Methods to objects
+
+Persons.prototype.character = "Humble";
+
+console.log(hFeatures);
+console.log(fFeatures.character);
+Persons.prototype.birthYear = function(){
+    let year = new Date();
+    let year_birth = year.getFullYear() - this.age
+};
+
+let years = new Date();
+
+console.log(years.getFullYear());
