@@ -68,4 +68,44 @@ let personss = {
 
 console.log(personss.fullname);
 console.log(personss.fullname());
+//The way to create an "object type",
+// is to use an object constructor function.
+function Persons(first,last,age,eye){
+    this.firstName =first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+    this.nationality = "Kenyan"
+    this.name = function(){return this.firstName + " " + this.lastName;};
+    this.changeName = function(name) {
+        this.lastName = name;
+    }
+}
 
+let hFeatures = new Persons("James","Doe",45,"Green");
+console.log(hFeatures.eyeColor);
+//adding properties
+hFeatures.nationality = "Kenyan";
+
+console.log(hFeatures);
+console.log(hFeatures.nationality);
+
+//adding a method to an object
+
+hFeatures.fullname = function(){
+    return this.firstName + " " + this.lastName;
+}
+
+console.log(hFeatures);
+
+console.log(hFeatures.fullname());
+
+let fFeatures = new Persons("Mariam","Abigail",32,"blue");
+
+console.log(fFeatures.name());
+fFeatures.changeName("Grace");
+hFeatures.changeName("Wisdom");
+
+console.log(fFeatures.name());
+console.log(hFeatures.name());
+console.log(hFeatures.fullname());
