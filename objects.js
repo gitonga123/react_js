@@ -128,8 +128,12 @@ console.log(fFeatures.character);
 Persons.prototype.birthYear = function(){
     let year = new Date();
     let year_birth = year.getFullYear() - this.age
+    return year_birth;
 };
 
-let years = new Date();
+console.log(hFeatures.birthYear());
+console.log(fFeatures.birthYear());
 
-console.log(years.getFullYear());
+//Tip => Only Modify your own prototypes.
+//Never Modify the prototypes of standard Js objects
+
