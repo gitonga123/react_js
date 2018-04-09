@@ -54,3 +54,19 @@ function myFunction(a,b){
 
 window.myFunction(10,2);
 
+//in a browser the function becomes the window function
+
+//the global object
+//in the browser the global object is the browser window.
+
+//invoking a function as a method
+
+let myObject = {
+	firstName: "John",
+	lastName: "Doe",
+	fullName: function(){
+		return this.firstName + " " + this.lastName;
+	}
+}
+
+myObject.fullName();
