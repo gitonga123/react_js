@@ -45,3 +45,12 @@ console.log(sum);
 //it changes the original value
 //changes to object properties are visible (reflected) outside the function
 
+//Invoking a Javascript function
+//calling a function
+
+function myFunction(a,b){
+	return a * b;
+}
+
+window.myFunction(10,2);
+
