@@ -36,3 +36,12 @@ let x = findMax(1,123,500,115,44,88);
 let sum = sumAll(1,123,500,115,44,88);
 
 console.log(sum);
+
+//arguments are passed by value
+//changes to arguments are not visible outside the function
+//Objects are passed by reference
+//because object refrences are values
+//if a function changes an object property
+//it changes the original value
+//changes to object properties are visible (reflected) outside the function
+
