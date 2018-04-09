@@ -70,3 +70,24 @@ let myObject = {
 }
 
 myObject.fullName();
+
+//This key is the object that owns the JavaScript Code
+
+
+//Invoking a Function with a Function Constructor
+//function invocation is preced with the new Keyword
+
+function myFunction(arg1,arg2){
+	this.firstName = arg1;
+	this.lastName = arg2;
+}
+
+//this creates a new object
+
+let mx = new myFunction("John", "Doe");
+
+mx.firstName;
+
+//constructor invocation creates a new object. the new object 
+//inherits the properties and methods from its constructor.
+//The value of this will be the new object created when the function is invoked.
