@@ -16,4 +16,8 @@ Node.js
 7. Buffer -- Node.js super data type
 8. Object Literal Notation
 9. Prootypal Nature
+    - There are no classes in JS cause objects inherit from other objects => Prototypal Inheritance
+
 10. Conventions
+11. Streaming Data
+    -  Application processes the data while it's still receiving it. 
