@@ -12,3 +12,8 @@ Node.js
 3. Arrow Functions
 4. Spread Operators
 5. Rest Parameters
+6. Loose typing
+7. Buffer -- Node.js super data type
+8. Object Literal Notation
+9. Prootypal Nature
+10. Conventions
