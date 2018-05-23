@@ -1,0 +1,27 @@
+{
+  "name": "express-cli",
+  "version": "1.0.0",
+  "description": "Learning Node Js Using Express Js Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitonga123/react_js.git"
+  },
+  "keywords": [
+    "Express",
+    "Node",
+    "E6"
+  ],
+  "author": "Daniel Mutwiri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitonga123/react_js/issues"
+  },
+  "homepage": "https://github.com/gitonga123/react_js#readme",
+  "dependencies": {
+    "express": "^4.1.2"
+  }
+}

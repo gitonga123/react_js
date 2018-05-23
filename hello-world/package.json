@@ -1,0 +1,27 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "Express & Node JS Learn",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitonga123/react_js.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Js"
+  ],
+  "author": "Daniel Mutwiri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitonga123/react_js/issues"
+  },
+  "homepage": "https://github.com/gitonga123/react_js#readme"
+}

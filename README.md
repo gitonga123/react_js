@@ -20,4 +20,9 @@ Node.js
 
 10. Conventions
 11. Streaming Data
-    -  Application processes the data while it's still receiving it. 
+
+    - Application processes the data while it's still receiving it.
+
+12. Express.js => Node.js projects
+    
+    - Components (HTTP module and Connect) -> Middleware
