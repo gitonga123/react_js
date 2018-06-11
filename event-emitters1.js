@@ -12,4 +12,5 @@ emitter.on('knock', function () {
 })
 
 emitter.emit('knock')
-// emitter.emit('knock')
+emitter.removeAllListeners()
+emitter.emit('knock')
