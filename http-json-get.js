@@ -14,6 +14,6 @@ https.get(url, (response) => {
       console.error(e.message)
     }
   })
-}).on('error', (error)=> {
+}).on('error', (error) => {
   console.error(`Got Error: ${error.message}`)
 })
