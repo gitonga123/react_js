@@ -24,5 +24,5 @@ Node.js
     - Application processes the data while it's still receiving it.
 
 12. Express.js => Node.js projects
-    
     - Components (HTTP module and Connect) -> Middleware
+    - Express.js is a web framework based on the core Node.js http  module and Connect components.
