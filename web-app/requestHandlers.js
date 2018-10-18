@@ -19,6 +19,7 @@ function start (response, postData) {
 }
 
 function upload (response, postData) {
+  console.log(queryString.parse(postData));
   console.log('Upload Function');
   response.writeHead(200, {'Content-Type': 'text/plain'});
   response.write('You\'ve sent: ' + queryString.parse(postData).text );
