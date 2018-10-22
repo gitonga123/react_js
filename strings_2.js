@@ -41,3 +41,15 @@ arr.push(' times faster');
 
 arr.join('');
 console.log(arr);
+
+// string prorotype methods
+console.log('abc'.slice(1, 2));
+var string_1 = 'a, b, c,d'.split(',');
+console.log(string_1);
+console.log(string_1.join(','));
+var string_2 = ' go home ';
+console.log(string_2);
+console.log(string_2.trim());
+console.log(string_1.concat(' , ', string_2, '.'));
+console.log('JOHN'.toLowerCase());
+console.log(string_2.toUpperCase());
