@@ -15,5 +15,5 @@ let str2 = 'Written ' +
            'lines';
 console.log(str2 === 'Written over multiple lines'); // true
 // Character Access
-console.log('abc'.charAt(1)); // b
-console.log('abc'[1]); // b
+console.log('abc'.charAt(1)); //b
+console.log('abc'[1]); //b
