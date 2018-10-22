@@ -5,7 +5,10 @@ var jane = {
     return 'Person Named ' + this.name;
   }
 };
-console.log(jane.name);
-jane.name = 'John';
-console.log(jane.name);
-console.log(jane.describe());
+
+eval('jane');
+
+// console.log(jane.name);
+// jane.name = 'John';
+// console.log(jane.name);
+// console.log(jane.describe());
