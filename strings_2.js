@@ -53,3 +53,17 @@ console.log(string_2.trim());
 console.log(string_1.concat(' , ', string_2, '.'));
 console.log('JOHN'.toLowerCase());
 console.log(string_2.toUpperCase());
+
+// string search and compare
+// index of starts searching from position 1
+console.log('abcd'.indexOf('c'));
+console.log('abcda'.indexOf('a'));
+// last index of starts search from position end
+console.log('abcda'.lastIndexOf('a'));
+
+// locale Compare performs a locale-senstive comparing of the string with other.
+// < 0 if the string comes before other
+// = 0 if the string is equivalent to other
+// > 0 if the string comes after other.
+console.log('apple'.localeCompare('banana'));
+console.log('appple'.localeCompare('apple'));
