@@ -26,3 +26,18 @@ console.log(typeof hi.toString());
 console.log(typeof String(hi));
 let hi_2 = '123';
 console.log(typeof hi_2);
+
+// string concatenation
+var str_2 = '';
+str_2 += 'Say Hello ';
+str_2 += 7;
+str_2 += ' times fast!';
+console.log(str_2);
+
+var arr = [];
+arr.push('Say hello ');
+arr.push(7);
+arr.push(' times faster');
+
+arr.join('');
+console.log(arr);
