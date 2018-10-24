@@ -13,3 +13,9 @@ var threeTimez = numbers.map((x) => {
 })
 
 console.log(threeTimez);
+
+var threeTime = numbers.map(x => {
+  return x *3;
+});
+
+console.log(threeTime);
