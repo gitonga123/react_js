@@ -20,5 +20,5 @@ var threeTime = numbers.map(x => {
 
 console.log(threeTime);
 
-var threeTim = number.map(x => return x * 3);
+var threeTim = numbers.map( x => x * 3 );
 console.log(threeTim);
