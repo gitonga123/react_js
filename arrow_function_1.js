@@ -6,3 +6,10 @@ var threeTimes = numbers.map(function (x) {
 });
 
 console.log(threeTimes);
+
+// ES6
+var threeTimez = numbers.map((x) => {
+  return x *3;
+})
+
+console.log(threeTimez);
