@@ -22,3 +22,4 @@ console.log(threeTime);
 
 var threeTim = numbers.map( x => x * 3 );
 console.log(threeTim);
+
