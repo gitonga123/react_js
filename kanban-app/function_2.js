@@ -54,3 +54,16 @@ function myFun (a, b, ...AllArgs) {
 }
 
 myFun('one', 'two', 'three', 'four', 'five', 'six');
+
+// rest parameters are only the ones that haven't been given a separate name
+// the arguments object contains all arguments passed to the function.
+// they can work together by reflecting the arguments that were passed to the function
+
+function checkArgs (...args) {
+  console.log(args.length);
+  console.log(arguments.length);
+  console.log(args[0], arguments[0]);
+  console.log(args[1], arguments[1]);
+}
+
+checkArgs('a', 'b');
