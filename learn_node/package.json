@@ -1,0 +1,28 @@
+{
+  "name": "learn_node",
+  "version": "1.0.0",
+  "description": "Travel Agency Webiste",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitonga123/react_js.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Travel"
+  ],
+  "author": "Daniel Mutwiri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gitonga123/react_js/issues"
+  },
+  "homepage": "https://github.com/gitonga123/react_js#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0"
+  }
+}
