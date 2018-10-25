@@ -67,3 +67,8 @@ function checkArgs (...args) {
 }
 
 checkArgs('a', 'b');
+
+// The Spread Operator
+let value1 = 25; 
+let value2 = 56;
+console.log(Math.max(value1, value2));
