@@ -72,3 +72,7 @@ checkArgs('a', 'b');
 let value1 = 25; 
 let value2 = 56;
 console.log(Math.max(value1, value2));
+
+let values = [25, 50, 75, 10];
+
+console.log(Math.max(...values, 190));
