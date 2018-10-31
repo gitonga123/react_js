@@ -15,7 +15,9 @@ app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
 app.set('port', process.env.PORT || 3030);
-
+app.use(function (request, response, next) {
+  response.locals.showTests = app.get('env') !== 'production' && request.query.test === '1'
+});
 app.get('/', function (request, response) {
   var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
   console.log(randomFortune);
@@ -24,7 +26,7 @@ app.get('/', function (request, response) {
 });
 
 app.get('/about', function (request, response) {
-  response.render('about');
+  response.render('about', pageTestScript: '/qa/tests-about.js');
 });
 
 app.use(function (request, response) {
@@ -39,6 +41,6 @@ app.use(function (error, request, response, next) {
 });
 
 app.listen(app.get('port'), function () {
-  console.log('Express started on localhost:3030' + app.get('port') +
+  console.log('Express started on localhost:' + app.get('port') +
    ' ; press Ctrl-C to terminate.');
 });
