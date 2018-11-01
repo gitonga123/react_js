@@ -16,6 +16,12 @@ app.set('view engine', 'handlebars');
 
 app.set('port', process.env.PORT || 3030);
 
+app.use(function (request, response, next) {
+  request.locals.showTests = app.get('env') !== 'production' &&
+  request.query.text === '1';
+
+  next();
+});
 app.get('/', function (request, response) {
   var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
   console.log(randomFortune);
@@ -23,8 +29,16 @@ app.get('/', function (request, response) {
   response.render('home', {fortune: randomFortune});
 });
 
-app.get('/about', function (request, response) {
-  response.render('about');
+app.get('/about', function(req, res) {
+  res.render('about', {fortune: fortune.getFortune(),
+                        pageTestScript: '/qa/tests-about.js' } );
+});
+
+app.get('/tours/hood-river', function (req, res) {
+  res.render('tours/hood-river');
+});
+app.get('/tours/request-group-rate', function (req, res) {
+  res.render('tours/request-group-rate');
 });
 
 app.use(function (request, response) {
