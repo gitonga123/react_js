@@ -2,10 +2,20 @@
   "name": "blog-express",
   "version": "0.0.2",
   "description": "Blog using Node, Express",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "Mocha tests"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^5.2.0",
+    "superagent": "^4.0.0"
+  }
 }

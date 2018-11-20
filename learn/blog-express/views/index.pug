@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+	head
+		title Blog Express
+		script(type="text/javascript")
+			const a = 1
+			console.log(`Some JavaScript code here and the value of a is ${a}`)
+	body
+		h1 Why JavaScript is Awesome
+		div(id="container", class="col")
+			p You are amazing
+			p Get on it!
+			p.
+				JavaScript is fun. Almost everything can
+				be written in JavaScript.
+				Oo Men this is strong Huge
+
+			- var languages = ['php', 'node', 'ruby']
+			div
+				each value, index in languages
+					p= index + ". " + value
+			div
+				- var coins = Math.round(Math.random()*10)
+				case coins
+					when 0
+						p You have no money
+					when 1
+						p You have a coin
+					default
+						p You have #{coins} coins!
+			div
+				mixin row(items)
+					tr
+						each item, index in items
+							td= item
+
+				mixin table(tableData)
+					table(class="table")
+						each row, index in tableData
+							+row(row)
+				- var node = [{name: "express"}, {name: "stylus"}, {name: "E6"}, {name: "derby"}]
+				+table(node)
+				- var js = [{name: "backnone"}, {name: "Angular"}, {name: "amber"}]
+				+table(js)
