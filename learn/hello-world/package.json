@@ -10,9 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "mocha": "^5.2.0",
     "mongoskin": "^2.1.0",
     "pug": "^2.0.3",
     "stylus": "^0.54.5"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "expect.js": "^0.3.1",
+    "mocha": "^5.2.0"
   }
 }
