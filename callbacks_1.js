@@ -21,3 +21,17 @@ cook_soup(ingredients, dice);
 cook_soup(ingredients, function( ingredients ) {
 	return 'chopped-up-good- ' + ingredients;
 });
+
+function funcA() {
+	funcB();
+}
+
+function funcB() {
+	funcC();
+}
+
+function funcC() {
+	console.log(Error().stack);
+}
+
+funcA();
