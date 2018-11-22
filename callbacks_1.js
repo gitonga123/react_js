@@ -15,5 +15,9 @@ function cook_soup(veggies, callback) {
 function dice(veggie) {
 	return 'diced-' + veggie;
 }
+var ingredients = ['potatoes', 'onions', 'tomatoes','garlic'];
+cook_soup(ingredients, dice);
 
-cook_soup(['potatoes', 'onions', 'tomatoes','garlic'], dice);
+cook_soup(ingredients, function( ingredients ) {
+	return 'chopped-up-good- ' + ingredients;
+});
