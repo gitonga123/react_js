@@ -12,3 +12,10 @@ function handleClick() {
 	value++;
 	document.getElementById("clickbutton").innerHTML = value;
 }
+
+document.addEventListener('keypress',handleKeyPress);
+
+function handleKeyPress(event) {
+	var keyPressed = event.key;
+	document.getElementById("text").innerHTML = "Key Pressed: " + keyPressed;
+}
