@@ -15,7 +15,6 @@ officers.forEach(function (officer) {
 });
 
 console.log(officersIds);
-
 // using map
 
 var officersIeds = officers.map(function (officer) {
@@ -29,3 +28,20 @@ console.log(officersIeds);
 const officersIdes = officers.map(officer => officer.id);
 
 console.log(officersIdes);
+
+
+// practise
+
+var fullName = [
+	{first: 'Daniel', last: 'Mutwiri'},
+	{first: 'James', last: 'Kubaye'},
+	{first: 'Azat', last: 'Mardan'},
+	{first: 'Azat', last: 'Donmezow'},
+	{first: 'Washin', last: 'Zepata'}
+]
+
+const name = fullName.map(names => names.first + " " + names.last);
+
+console.log(name);
+
+name.map(naming => console.log(naming));
